@@ -25,7 +25,7 @@ SECRET_KEY = 'django-insecure-ritn^#8vg&n+7gaf8z@6#^@gw2p1k#7gh%^^o-6nhcbzadn#ig
 # SECURITY WARNING: don't run with debug turned on in production!
 DEBUG = True
 
-ALLOWED_HOSTS = []
+ALLOWED_HOSTS = ['*']
 
 # Application definition
 
@@ -139,3 +139,4 @@ LOGIN_URL = '/user/login'
 # https://docs.djangoproject.com/en/4.0/ref/settings/#default-auto-field
 
 DEFAULT_AUTO_FIELD = 'django.db.models.BigAutoField'
+STATICFILES_STORAGE = 'whitenoise.storage.CompressedManifestStaticFilesStorage'
